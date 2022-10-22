@@ -1,0 +1,20 @@
+{
+"nome": "Anderson César",
+"idade": "36",
+"cidade":"Eusebio",
+"livros_favoritos":[
+"Eu sou a lenda",
+"E se não houver amanhã",
+"Biblia"
+],
+"Filmes_Favoritos":["Top Gun","Os Goonies","Caçadores de Emoções"],
+"hobbies":{
+    "Dias_da_semana":"Jogar no celular",
+    "Entre_horarios":"Ler noticias",
+    "Fim_de_semana":{
+        "Sabado":"Praça",
+        "Domingo":"Praia"
+    }
+}
+
+}

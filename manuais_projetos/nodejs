@@ -1,0 +1,26 @@
+//Como montar um servidor com nodejs para executar
+//requisições com get e envio de informações com post.
+
+//Instale o nodejs no micro.
+
+$ sudo dnf module list nodejs
+//Output
+Name                     Stream                   Profiles                                                Summary
+nodejs                   10 [d]                   common [d], development, minimal, s2i                   Javascript runtime
+nodejs                   12                       common, development, minimal, s2i                       Javascript runtime
+
+//Dois streamings estão disponíveis, o 10 e o 12. O [d] indica que a versão 10 é o streaming padrão. Se preferir instalar o Node.js 12, troque o streaming de módulo agora:
+
+$ sudo dnf module enable nodejs:12
+//Será solicitado que você confirme sua decisão. Depois disso, o streaming de versão 12 estará habilitado e poderemos continuar com a instalação. Para obter maiores informações sobre como os streamings de módulo funcionam, consulte a documentação oficial do AppStream do CentOS.
+
+//Instale o pacote nodejs com o dnf:
+
+$ sudo dnf install nodejs
+//Novamente, o dnf solicitará que você confirme as ações que serão tomadas. Pressione y e depois ENTER para instalar o software.
+
+//Verifique se a instalação foi bem-sucedida consultando o node pelo número de versão dele:
+
+$ node --version
+//Output
+//v12.13.1

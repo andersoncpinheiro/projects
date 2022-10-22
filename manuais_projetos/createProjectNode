@@ -1,0 +1,31 @@
+Como criar projeto em Node, siga os comandos abaixo, para criação
+em ambiente com uso do terminal
+
+Criar pasta do projeto
+$ mkdir 'nome_da_pasta_do_projeto'
+
+Para iniciar o projeto em Node apos ja ter instalado o Node.
+$ npm init -y
+//retorno deverá criar um projeto e dentro o arquivo package  do projeto no formato .json
+
+Deverá ser utilizado também o framework Express, para criar aplicações Web e APIs
+$ npm install i express
+//Note que após a instalação o arquivo package e pastas de modulos deverá ser populado com a informação da versão do express instalado.
+
+Agora poderá ser criado um arquivo para inicializar o servidor em nodejs
+utilize algum nome que faça sentido como index.js, seu conteúdo deverá conter
+a seguinte estrutura.
+
+//Cria uma constante para armazenar o express
+const express = require('express')
+
+//Neste constante de aplicação deverá ser inicializado o servidor express
+const app = express()
+
+//Onde a aplicação estará sendo 'escutada' através da porta 3000, tudo será mostrado através dela
+app.listen('3000')
+
+Para iniciar o projeto digite o seguinte comando
+$ node index.js
+
+//Acesse o navegador com digitando o seguinte endereço http://localhost:3000

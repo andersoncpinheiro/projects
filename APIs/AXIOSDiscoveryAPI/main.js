@@ -16,6 +16,11 @@ function addNewuser(newUser){
     })
     .catch(error => console.error(error))
 }
+const newUser = {
+    "name":"Anderson Pinheiro",
+    "avatar":"https://www.designi.com.br/images/preview/10133553.jpg",
+    "city":"Eusebio"
+}
 
 function getUser(id){
     axios.get(`${url}/${id}`)
@@ -28,12 +33,29 @@ function getUser(id){
     })
     .catch(error => console.error(error))
 }
-getUser(6)
-const newUser = {
-    "name":"Anderson Pinheiro",
-    "avatar":"https://www.designi.com.br/images/preview/10133553.jpg/100/150",
-    "city":"Eusebio"
+
+function updateUser(id, updatedUser){
+    axios.put(`${url}/${id}`, updatedUser)
+    .then(response => console.log(response))
+        .catch(error => console.error(error))
 }
 
+const updatedUser ={ 
+    name: "Jakeliny Gracielly",
+    avatar: "https://avatars.githubusercontent.com/u/17316392?v=4",
+    city: "São Paulo"
+  }
+
+function deleteUser(id){
+    axios.delete(`${url}/${id}`)
+        .then(response => console.log(response))
+        .catch(error => console.error(error))
+
+}   
+
+deleteUser(6)
+  
+getUser(3)
+updateUser(1, updatedUser)
 //addNewuser(newUser)
 getUsers()

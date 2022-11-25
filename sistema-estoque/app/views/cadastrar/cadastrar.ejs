@@ -6,8 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EstoqueSys</title>
     <h1>Cadastrar Items</h1>
-    <h>Está página esta em desenvolvimento, keep calm</h>
-
+        <table>
+            <tr>
+                <td>Id_Produto</td>
+                <td>Descricão</td>
+                <td>Fabricante</td>
+                <td>Valor_Unit</td>
+            </tr>
+            <%for ( var i = 0 ; i < cadastrar.length; i++) {%>
+            <tr>
+                <td><%= cadastrar[i].id_produto %></td>
+                <td><%= cadastrar[i].descricao %></td>
+                <td><%= cadastrar[i].fabricante %></td>
+                <td><%= cadastrar[i].valor_uni %></td>
+            </tr>
+            <% } %>
+        </table>
 </head>
 <body>
     

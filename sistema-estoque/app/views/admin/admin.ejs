@@ -5,10 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EstoqueSys/Administrador</title>
-    <h1>Área do Administrador</h1>
+    <h1>SysEstoque</h1>
 
+    <h3>Cadastrar Produtos</h3>
+
+        <form action="/produtos/salvar" method="post">
+            <label>Descrição</label>
+            <input type="text" id="descricao" name="descricao" 
+            placeholder="Descrição do produto"/>
+            <br/>
+            <label>Fabricante</label>
+            <input type="text" id="fabricante" name="fabricante"
+            placeholder="Descrição do Fabricante"/>
+            <br/>
+            <label>Valor Unitário</label>
+            <input type="number" id="valor_uni" name="valor_uni"
+            placeholder="Valor Unitário "/>
+            <br/>
+            <input type="submit" value="Enviar"/>
+        </form>
 </head>
 <body>
     
+    
+
 </body>
 </html>

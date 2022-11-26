@@ -6,10 +6,10 @@ var server = http.createServer(function(req,res){
 
     var categoria = req.url;
 
-    if (categoria == '/cadastrar'){
+    if (categoria == '/produtos'){
      res.end("<html><body>Produtos de Tecnologia</body></html>");
     
-    } else if(categoria =='/anotacoes'){
+    } else if(categoria =='/cadastrar'){
     res.end("<html><body>Produtos de Vestuarío</body></html>");
     
     } else{

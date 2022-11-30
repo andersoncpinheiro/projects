@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produto</title>
+   
+   
+
+</head>
+<body>
+    
+    <h1>Último produto cadastrado</h1>
+        <table>
+            <tr>
+                <td>id_produto</td>
+                <td>descricão</td>
+                <td>fabricante</td>
+                <td>valor_uni</td>
+            </tr>
+            <tr>
+                <td><%= produto[0].id_produto %></td>
+                <td><%= produto[0].descricao %></td>
+                <td><%= produto[0].fabricante %></td>
+                <td><%= produto[0].valor_uni %> R$</td>
+            </tr>
+        </table>
+</body>
+</html>

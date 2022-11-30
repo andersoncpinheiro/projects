@@ -2,9 +2,9 @@
 
 module.exports = function(app){
 
-   app.get('/produtos',function(req,res){
+   app.get ('/produtos',function(req,res){
       var connection = app.config.dbConnection();       
-      var produtosModel = app.app.models.produtosModel;
+      var produtosModel = new app.app.models.produtosModel(connection);
 
      produtosModel.getProdutos(connection,function(error, result  ){
       res.render("produtos/produtos",{produtos: result});    

@@ -22,7 +22,9 @@ module.exports = function(application){
         var produtosModel = new application.app.models.ProdutosDAO(connection);
 
         produtosModel.salvarProduto(produto, function(error, result){
-            res.redirect('/produtos');
+            res.redirect('/formulario_inclusao_produto');
         });
+        
     });
 }
+

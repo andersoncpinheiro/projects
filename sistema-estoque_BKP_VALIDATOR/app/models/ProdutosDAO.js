@@ -3,11 +3,11 @@ function ProdutosDAO(connection){
 }
 
 ProdutosDAO.prototype.getProduto = function(callback){
-    this._connection.query('select * from produto p where p.id_produto = (select max(p.id_produto) from produto p', callback);
+    this._connection.query('SELECT id_produto, descricao, fabricante, valor_uni FROM produto ORDER BY id_produto DESC LIMIT 1', callback);
 }
 
 ProdutosDAO.prototype.getProdutos = function(callback){
-    this._connection.query('select * from produto', callback);
+    this._connection.query('select * from produto where id_produto = 3', callback);
 }
 
 ProdutosDAO.prototype.salvarProduto = function(produto, callback){

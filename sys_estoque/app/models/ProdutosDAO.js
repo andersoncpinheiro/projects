@@ -7,7 +7,7 @@ ProdutosDAO.prototype.getProduto = function(callback){
 }
 
 ProdutosDAO.prototype.getProdutos = function(callback){
-    this._connection.query('select * from produto where id_produto = 3', callback);
+    this._connection.query('select * from produto', callback);
 }
 
 ProdutosDAO.prototype.salvarProduto = function(produto, callback){

@@ -12,4 +12,6 @@ module.exports.produto = function(application, req, res){
     produtosModel.getProduto(function(error, result){
         res.render('produtos/produto', { produto : result });
     });
+
+   
 }

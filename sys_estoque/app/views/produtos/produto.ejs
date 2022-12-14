@@ -51,8 +51,8 @@
 						
 							</tr>
 							<tr>
-								<td><a href="produto" class="produto_titulo"><%= produto[i].id_produto %></a></td>
-								<td><a href="produto" class="produto_titulo"><%= produto[i].descricao %></a></td>
+								<td><a href="#" onclick="event" class="produto_titulo"><%= produto[i].id_produto %></a></td>
+								<td><a href="#" class="produto_titulo"><%= produto[i].descricao %></a></td>
 								<td><span class="produto_autor"><%= produto[i].fabricante %></span></td>
 								<td><span class="produto_autor"><%= produto[i].valor_uni %> R$</span></td>							</p>
 						</div>
@@ -61,7 +61,22 @@
 			<% } %>
 		<% } %>	
 	</tr>
-	</table-produto>
-		</div>
+	</table-produtos>
+	</div>
+	</br>
+
+	<div class="result-table">
+	
+		<tr id="result">
+	
+	</div>
+	<script>
+ 	   const list = document.getElementById("result");
+		onclick = (event) => { 
+				list.innerHTML = "Tão perto!!!!!!!!!"
+				
+	};
+	
+	</script>
 	</body>
 </html>

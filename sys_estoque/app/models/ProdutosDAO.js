@@ -3,7 +3,7 @@ function ProdutosDAO(connection){
 }
 
 ProdutosDAO.prototype.getProduto = function(callback){
-    this._connection.query('SELECT id_produto, descricao, fabricante, valor_uni FROM produto ORDER BY id_produto DESC LIMIT 1', callback);
+    this._connection.query('SELECT id_produto, descricao, fabricante, valor_uni, created_at FROM produto ORDER BY id_produto DESC LIMIT 1', callback);
 }
 
 ProdutosDAO.prototype.getProdutos = function(callback){

@@ -20,10 +20,9 @@
 	<header>
 		<div class="topnav">
 			<img src="images/logo.png" />
-			<a class="active" href="/">Home</a>
-			<a href="produtos">Lista de Produtos</a>
 			<a href="produto">Ultimo Produto Cadastrado</a>
-			<div class="topnav-right">
+			<a href="produtos">Lista de Produtos</a>
+ 			<div class="topnav-right">
 	        <a href="formulario_inclusao_produto">Formulario Cadastro de Produtos</a>
 			</div>
 		  </div>
@@ -32,16 +31,15 @@
 	</header>
 	
 	<body>
-
+		<div class="container produto">
 		<h1>Produtos em Estoque</h1>
-
-		<table>
+		<table class="table-produtos">
 			
 			<tr>
-				<td>ID</td>
-				<td>Descricao</td>
-				<td>Fabricante</td>
-				<td>Valor Unitário</td>
+				<td><strong>ID</strong></td>
+				<td><strong>Descricao</strong></td>
+				<td><strong>Fabricante</strong></td>
+				<td><strong>Valor Unitário</strong></td>
 
 			</tr>
 			<% for(var i = 0; i < produtos.length; i++){ %>
@@ -53,7 +51,8 @@
 				</tr>
 			<% } %>
 
-		</table>
+		</table-produto>
+	</div>
 
 	</body>
 </html>

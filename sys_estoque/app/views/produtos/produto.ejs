@@ -20,9 +20,8 @@
 	<header>
 		<div class="topnav">
 			<img src="images/logo.png" />
-			<a class="active" href="/">Home</a>
-			<a href="produtos">Lista de Produtos</a>
 			<a href="produto">Ultimo Produto Cadastrado</a>
+			<a href="produtos">Lista de Produtos</a>
 			<div class="topnav-right">
 	        <a href="formulario_inclusao_produto">Formulario Cadastro de Produtos</a>
 			</div>
@@ -31,22 +30,38 @@
 
 	</header>
 	
-	
+	<body>		
+		<div class="container-produto">
 		<h1>Último produto cadastrado</h1>
 
-		<table>
-            <tr>
-                <td>id_produto</td>
-                <td>descricão</td>
-                <td>fabricante</td>
-                <td>valor_uni</td>
-            </tr>
-            <tr>
-				<td><%= produto[0].id_produto %></td>
-                <td><%= produto[0].descricao %></td>
-                <td><%= produto[0].fabricante %></td>
-                <td><%= produto[0].valor_uni %> R$</td>
-            </tr>
-        </table>
+	
+		
+		<% if(produto.length > 0){ %>
+			<% for(var i = 0; i < produto.length; i++){ %>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="produto_wrapper">
+							<table class="table-produtos">
+
+							<tr>
+								<td><strong>ID</strong></td>
+								<td><strong>Descricao</strong></td>
+								<td><strong>Fabricante</strong></td>
+								<td><strong>Valor Unitário</strong></td>
+						
+							</tr>
+							<tr>
+								<td><a href="produto" class="produto_titulo"><%= produto[i].id_produto %></a></td>
+								<td><a href="produto" class="produto_titulo"><%= produto[i].descricao %></a></td>
+								<td><span class="produto_autor"><%= produto[i].fabricante %></span></td>
+								<td><span class="produto_autor"><%= produto[i].valor_uni %> R$</span></td>							</p>
+						</div>
+					</div>
+				</div>
+			<% } %>
+		<% } %>	
+	</tr>
+	</table-produto>
+		</div>
 	</body>
 </html>

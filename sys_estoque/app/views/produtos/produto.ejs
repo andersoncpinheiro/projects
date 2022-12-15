@@ -51,32 +51,26 @@
 						
 							</tr>
 							<tr>
-								<td><a href="#" onclick="event" class="produto_titulo"><%= produto[i].id_produto %></a></td>
+								<td><a href="#" onclick="result()" class="produto_titulo"><%= produto[i].id_produto %></a></td>
 								<td><a href="#" class="produto_titulo"><%= produto[i].descricao %></a></td>
 								<td><span class="produto_autor"><%= produto[i].fabricante %></span></td>
-								<td><span class="produto_autor"><%= produto[i].valor_uni %> R$</span></td>							</p>
+								<td><span class="produto_autor"><%= produto[i].valor_uni %> R$</span></td>		
+							</tr>
 						</div>
 					</div>
 				</div>
 			<% } %>
 		<% } %>	
 	</tr>
-	</table-produtos>
+	</table>
 	</div>
-	</br>
 
-	<div class="result-table">
 	
-		<tr id="result">
 	
-	</div>
-	<script>
- 	   const list = document.getElementById("result");
-		onclick = (event) => { 
-				list.innerHTML = "Tão perto!!!!!!!!!"
-				
-	};
-	
-	</script>
-	</body>
+	<div id="print_result"> </div>
+
+			<% function result(){ %>
+				 document.getElementById("print_result").innerHTML ="aqui o retorno"; 
+ 				<%}%>
+</body>
 </html>

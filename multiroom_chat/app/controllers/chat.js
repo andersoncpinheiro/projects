@@ -1,4 +1,7 @@
 //exportar propriedade chamada index, contem função que terá parametros
+
+const { emit } = require("../../config/server");
+
 //1- instancia objeto express, 2 requisicao e 3 resposta
 module.exports.iniciachat = function(application, req, res){
     var dadosForm = req.body;
@@ -12,5 +15,11 @@ module.exports.iniciachat = function(application, req, res){
         return;
     }
     
+    application.get('io').emit(
+    'msgParaCliente', 
+    {apelido: dadosForm.apelido, mensagem: ' entrou no chat'
+    }
+    );
+
     res.render('chat')
 }

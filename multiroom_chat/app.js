@@ -23,9 +23,9 @@ io.on('connection', function(socket){
             'msgParaCliente',
             {apelido:data.apelido, mensagem:data.mensagem}
             );
-    socket.broadcast.emit(
-        'msgParaCliente',
-        {apelido:data.apelido, mensagem:data.mensagem}
+        socket.broadcast.emit(
+           'msgParaCliente',
+           {apelido:data.apelido, mensagem:data.mensagem}
         );
         /*Participantes*/
     if(parseInt(data.apelido_atualizado_nos_clientes) == 0){
@@ -33,7 +33,7 @@ io.on('connection', function(socket){
             'participantesParaCliente',
             {apelido:data.apelido}
             );
-    socket.broadcast.emit(
+        socket.broadcast.emit(
             'participantesParaCliente',
             {apelido:data.apelido}
             );

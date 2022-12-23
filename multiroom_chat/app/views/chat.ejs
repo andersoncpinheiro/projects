@@ -125,6 +125,7 @@
 				var html = '';
 				html +='<div class="dialogo">';
 					html += '<h4>' + data.apelido + '</h4>';
+					html += '<img src="images/ico_usuario.png">';
 					html += '<p>' + data.mensagem + '<p>';
 					html +='</div>';
 				$('#dialogos').append(html); 
@@ -133,10 +134,11 @@
 
 				socket.on('participantesParaCliente', function(data){
 				var html = '';
+
 				html +='<span class="participante">';
 					html += '<img src="images/ico_usuario.png">';
 					html += data.apelido;
-					html +='</span>';
+				html +='</span>';
 				$('#pessoas').append(html); 
 
 				});

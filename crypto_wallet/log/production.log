@@ -1,0 +1,22 @@
+W, [2023-02-09T21:33:30.839705 #18417]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+I, [2023-02-09T21:33:54.212842 #18417]  INFO -- : [df0d9cf4-0353-4246-bc80-46c20e39a5a2] Started GET "/coins" for 127.0.0.1 at 2023-02-09 21:33:54 -0300
+I, [2023-02-09T21:33:54.215418 #18417]  INFO -- : [df0d9cf4-0353-4246-bc80-46c20e39a5a2] Processing by CoinsController#index as HTML
+I, [2023-02-09T21:33:54.227880 #18417]  INFO -- : [df0d9cf4-0353-4246-bc80-46c20e39a5a2]   Rendered coins/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 2824)
+I, [2023-02-09T21:33:54.227972 #18417]  INFO -- : [df0d9cf4-0353-4246-bc80-46c20e39a5a2]   Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 2885)
+I, [2023-02-09T21:33:54.228199 #18417]  INFO -- : [df0d9cf4-0353-4246-bc80-46c20e39a5a2] Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.7ms | Allocations: 4439)
+F, [2023-02-09T21:33:54.229279 #18417] FATAL -- : [df0d9cf4-0353-4246-bc80-46c20e39a5a2]   
+[df0d9cf4-0353-4246-bc80-46c20e39a5a2] ActionView::Template::Error (SQLite3::SQLException: no such table: coins):
+[df0d9cf4-0353-4246-bc80-46c20e39a5a2]     3: <h1>Coins</h1>
+[df0d9cf4-0353-4246-bc80-46c20e39a5a2]     4: 
+[df0d9cf4-0353-4246-bc80-46c20e39a5a2]     5: <div id="coins">
+[df0d9cf4-0353-4246-bc80-46c20e39a5a2]     6:   <% @coins.each do |coin| %>
+[df0d9cf4-0353-4246-bc80-46c20e39a5a2]     7:     <%= render coin %>
+[df0d9cf4-0353-4246-bc80-46c20e39a5a2]     8:     <p>
+[df0d9cf4-0353-4246-bc80-46c20e39a5a2]     9:       <%= link_to "Show this coin", coin %>
+[df0d9cf4-0353-4246-bc80-46c20e39a5a2]   
+[df0d9cf4-0353-4246-bc80-46c20e39a5a2] app/views/coins/index.html.erb:6
+I, [2023-02-09T21:34:01.784417 #18417]  INFO -- : [d88f7c04-3fc9-422a-973e-7b125a23ce7f] Started GET "/" for 127.0.0.1 at 2023-02-09 21:34:01 -0300
+F, [2023-02-09T21:34:01.785630 #18417] FATAL -- : [d88f7c04-3fc9-422a-973e-7b125a23ce7f]   
+[d88f7c04-3fc9-422a-973e-7b125a23ce7f] ActionController::RoutingError (No route matches [GET] "/"):
+[d88f7c04-3fc9-422a-973e-7b125a23ce7f]   
+W, [2023-02-09T21:35:37.238370 #18591]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".

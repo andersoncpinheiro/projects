@@ -1,14 +1,22 @@
 <p style="color: green"><%= notice %></p>
 
+<li>
+    <ul>
+    <%= link_to "Páginal Inicial", inicio_path %> 
+
+    </ul>
+</li>
+
 <h1>Coins</h1>
 
 <table>
 	<thead>
-	<tr>
+	<tr><strong>
 		<th>Descrição</th>
 		<th>Sigla</th>
 		<th>Url Imagem</th>
 		<th colspan="3"></th>
+		</strong>
 	</tr>
 	</thead>
 	
@@ -16,7 +24,7 @@
 		<% @coins.each do |coin| %>
 		<tr>
 			<td><%= coin.description %></td>
-			<td> coin.acronym</td>
+			<td><%= coin.acronym %></td>
 			<td> <img src="<%= coin.url_image%>" width="25p" height="25px"> </td>
 			<td><%= link_to "Mostrar", coin %></td>
 			<td><%= link_to "Editar", edit_coin_path(coin)%></td>
@@ -28,7 +36,12 @@
 </table>
 
 
+<li>
+    <ul>
 
-<%= link_to "Novo", new_coin_path %>
-<br>
-<%= link_to "Voltar para página inicial", welcome_index_path %>
+    <%= link_to "Novo", new_coin_path %>
+    </ul>
+</li>
+
+
+

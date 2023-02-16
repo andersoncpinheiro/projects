@@ -1,10 +1,17 @@
-<h1>Editing coin</h1>
+<li>
+    <ul>
+    <%= link_to "Páginal Inicial", inicio_path %> 
+
+    </ul>
+</li>
+
+<h1>Editar moeda</h1>
 
 <%= render "form", coin: @coin %>
 
 <br>
 
 <div>
-  <%= link_to "Show this coin", @coin %> |
-  <%= link_to "Back to coins", coins_path %>
+  <%= link_to "Mostrar", @coin %> |
+  <%= link_to "Voltar", coins_path %>
 </div>

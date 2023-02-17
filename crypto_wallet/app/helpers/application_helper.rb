@@ -6,6 +6,18 @@ module ApplicationHelper
         time = Time.new
         time.strftime("%k:%M:%S") 
     end 
+    
+    def ambiente_rails
+    	if Rails.env.development?
+    	"Desenvolvimento"
+    	elsif Rails.env.production?
+    	"Produção"    
+    	else
+    	"Teste"
+    	end	
+    end	
+
+
 
     #Links
     #Bit

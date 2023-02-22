@@ -3644,3 +3644,712 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 2730)
 
 
+Started GET "/coins" for 127.0.0.1 at 2023-02-16 21:23:17 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:24
+  Rendered coins/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1540)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 3737)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.2ms | Allocations: 4063)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-02-16 21:23:19 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 61)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2410)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 2723)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-02-16 21:23:21 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:24
+  Rendered coins/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1530)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 3729)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.2ms | Allocations: 4055)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-02-16 21:23:22 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 61)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 2427)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 2740)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-02-16 21:23:37 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:24
+  Rendered coins/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1532)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 3730)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.3ms | Allocations: 4056)
+
+
+Started GET "/coins/new" for 127.0.0.1 at 2023-02-16 21:23:39 -0300
+Processing by CoinsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/new.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 2.7ms | Allocations: 1222)
+  Rendered coins/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1348)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3532)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 3861)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-02-22 19:41:39 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+Zeitwerk::NameError (expected file /home/anderson/Documentos/git/projects/crypto_wallet/app/controllers/welcome_controller.rb to define constant WelcomeController, but didn't):
+  
+zeitwerk (2.6.6) lib/zeitwerk/loader/callbacks.rb:25:in `on_file_autoloaded'
+zeitwerk (2.6.6) lib/zeitwerk/kernel.rb:31:in `require'
+activesupport (7.0.4.2) lib/active_support/inflector/methods.rb:280:in `const_get'
+activesupport (7.0.4.2) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (7.0.4.2) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.0.4.2) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.0.4.2) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.2) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/inicio" for 127.0.0.1 at 2023-02-22 19:42:27 -0300
+  
+ActionController::RoutingError (uninitialized constant WelcomeController):
+  
+Started GET "/inicio" for 127.0.0.1 at 2023-02-22 19:43:34 -0300
+  
+ActionController::RoutingError (uninitialized constant WelcomeController):
+  
+Started GET "/inicio" for 127.0.0.1 at 2023-02-22 19:43:36 -0300
+  
+ActionController::RoutingError (uninitialized constant WelcomeController):
+  
+Started GET "/coins" for 127.0.0.1 at 2023-02-22 19:43:49 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:25
+  Rendered coins/index.html.erb within layouts/application (Duration: 43.6ms | Allocations: 18762)
+  Rendered layout layouts/application.html.erb (Duration: 182.7ms | Allocations: 53463)
+Completed 200 OK in 225ms (Views: 183.6ms | ActiveRecord: 1.2ms | Allocations: 58273)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-22 19:43:53 -0300
+  
+ActionController::RoutingError (uninitialized constant WelcomeController):
+  
+Started GET "/" for 127.0.0.1 at 2023-02-22 19:45:38 -0300
+  
+ActionController::RoutingError (uninitialized constant WelcomeController):
+  
+Started GET "/" for 127.0.0.1 at 2023-02-22 19:46:05 -0300
+  
+ActionController::RoutingError (uninitialized constant WelcomeController):
+  
+Started GET "/" for 127.0.0.1 at 2023-02-22 19:46:14 -0300
+  
+ActionController::RoutingError (uninitialized constant WelcomeController):
+  
+Started GET "/inicio" for 127.0.0.1 at 2023-02-22 19:46:27 -0300
+  
+ActionController::RoutingError (uninitialized constant WelcomeController):
+  
+Started GET "/inicio" for 127.0.0.1 at 2023-02-22 19:47:17 -0300
+  
+Zeitwerk::NameError (expected file /home/anderson/Documentos/git/projects/crypto_wallet/app/controllers/welcome_controller.rb to define constant WelcomeController, but didn't):
+  
+zeitwerk (2.6.6) lib/zeitwerk/loader/callbacks.rb:25:in `on_file_autoloaded'
+zeitwerk (2.6.6) lib/zeitwerk/kernel.rb:31:in `require'
+activesupport (7.0.4.2) lib/active_support/inflector/methods.rb:280:in `const_get'
+activesupport (7.0.4.2) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (7.0.4.2) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.0.4.2) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.0.4.2) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.2) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/inicio" for 127.0.0.1 at 2023-02-22 19:48:17 -0300
+  
+Zeitwerk::NameError (expected file /home/anderson/Documentos/git/projects/crypto_wallet/app/controllers/welcome_controller.rb to define constant WelcomeController, but didn't):
+  
+zeitwerk (2.6.6) lib/zeitwerk/loader/callbacks.rb:25:in `on_file_autoloaded'
+zeitwerk (2.6.6) lib/zeitwerk/kernel.rb:31:in `require'
+activesupport (7.0.4.2) lib/active_support/inflector/methods.rb:280:in `const_get'
+activesupport (7.0.4.2) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (7.0.4.2) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.0.4.2) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.0.4.2) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.2) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/inicio" for 127.0.0.1 at 2023-02-22 19:48:20 -0300
+  
+ActionController::RoutingError (uninitialized constant WelcomeController):
+  
+Started GET "/inicio" for 127.0.0.1 at 2023-02-22 19:49:35 -0300
+  
+Zeitwerk::NameError (expected file /home/anderson/Documentos/git/projects/crypto_wallet/app/controllers/welcome_controller.rb to define constant WelcomeController, but didn't):
+  
+zeitwerk (2.6.6) lib/zeitwerk/loader/callbacks.rb:25:in `on_file_autoloaded'
+zeitwerk (2.6.6) lib/zeitwerk/kernel.rb:31:in `require'
+activesupport (7.0.4.2) lib/active_support/inflector/methods.rb:280:in `const_get'
+activesupport (7.0.4.2) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (7.0.4.2) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.0.4.2) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.0.4.2) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.2) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/inicio?nome=%22anderson&curso=%22Rails%22" for 127.0.0.1 at 2023-02-22 19:52:16 -0300
+  
+ActionController::RoutingError (uninitialized constant WelcomeController):
+  
+Started GET "/inicio" for 127.0.0.1 at 2023-02-22 19:52:58 -0300
+  
+Zeitwerk::NameError (expected file /home/anderson/Documentos/git/projects/crypto_wallet/app/controllers/welcome_controller.rb to define constant WelcomeController, but didn't):
+  
+zeitwerk (2.6.6) lib/zeitwerk/loader/callbacks.rb:25:in `on_file_autoloaded'
+zeitwerk (2.6.6) lib/zeitwerk/kernel.rb:31:in `require'
+activesupport (7.0.4.2) lib/active_support/inflector/methods.rb:280:in `const_get'
+activesupport (7.0.4.2) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (7.0.4.2) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.0.4.2) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (7.0.4.2) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.0.4.2) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.2) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-02-22 19:55:13 -0300
+  
+ActionController::RoutingError (uninitialized constant WelcomeController):
+  
+Started GET "/" for 127.0.0.1 at 2023-02-22 19:55:17 -0300
+  
+ActionController::RoutingError (uninitialized constant WelcomeController):
+  
+Started GET "/inicio" for 127.0.0.1 at 2023-02-22 19:55:21 -0300
+  
+ActionController::RoutingError (uninitialized constant WelcomeController):
+  
+Started GET "/coins" for 127.0.0.1 at 2023-02-22 19:55:26 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:25
+  Rendered coins/index.html.erb within layouts/application (Duration: 14.2ms | Allocations: 4397)
+  Rendered layout layouts/application.html.erb (Duration: 33.2ms | Allocations: 18569)
+Completed 200 OK in 39ms (Views: 35.6ms | ActiveRecord: 1.5ms | Allocations: 20502)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-02-22 19:55:28 -0300
+  
+ActionController::RoutingError (uninitialized constant WelcomeController):
+  
+Started GET "/inicio" for 127.0.0.1 at 2023-02-22 20:04:03 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 809)
+  Rendered layout layouts/application.html.erb (Duration: 107.9ms | Allocations: 35341)
+Completed 200 OK in 122ms (Views: 113.3ms | ActiveRecord: 0.0ms | Allocations: 41397)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-02-22 20:05:42 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 1.0ms | Allocations: 243)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 671)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 14956)
+Completed 200 OK in 28ms (Views: 26.8ms | Allocations: 16159)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-02-22 20:05:45 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:25
+  Rendered coins/index.html.erb within layouts/application (Duration: 27.6ms | Allocations: 18989)
+  Rendered layout layouts/application.html.erb (Duration: 32.9ms | Allocations: 21406)
+Completed 200 OK in 42ms (Views: 36.0ms | ActiveRecord: 1.6ms | Allocations: 23245)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-02-22 20:05:47 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 127)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 2515)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 2890)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-02-22 20:05:49 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:25
+  Rendered coins/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1589)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 3786)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.2ms | Allocations: 4116)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-02-22 20:05:51 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.2ms | Allocations: 51)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 119)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2469)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2803)
+
+
+Started GET "/inicio?nome=%22Anderson%22curso=%22Rails%22" for 127.0.0.1 at 2023-02-22 20:06:10 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"nome"=>"\"Anderson\"curso=\"Rails\""}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.3ms | Allocations: 51)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 120)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2460)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 2787)
+
+
+Started GET "/inicio?nome=%22Anderson%22&curso=%22Rails%22" for 127.0.0.1 at 2023-02-22 20:06:19 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"nome"=>"\"Anderson\"", "curso"=>"\"Rails\""}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.4ms | Allocations: 51)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 2477)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 2801)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-02-22 20:06:25 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:25
+  Rendered coins/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1556)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 3768)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.3ms | Allocations: 4100)
+
+
+Started GET "/coins/2" for 127.0.0.1 at 2023-02-22 20:06:27 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:63:in `set_coin'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/show.html.erb within layouts/application
+  Rendered coins/_coin.html.erb (Duration: 1.0ms | Allocations: 328)
+  Rendered coins/show.html.erb within layouts/application (Duration: 41.3ms | Allocations: 1650)
+  Rendered layout layouts/application.html.erb (Duration: 46.0ms | Allocations: 3945)
+Completed 200 OK in 74ms (Views: 46.7ms | ActiveRecord: 0.2ms | Allocations: 8670)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-02-22 20:06:28 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.4ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:25
+  Rendered coins/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1646)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 3851)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.4ms | Allocations: 4217)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-02-22 20:06:30 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.2ms | Allocations: 51)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 125)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2464)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 2794)
+
+
+Started GET "/inicio?nome=%22Anderson%22&curso=%22Rails%22" for 127.0.0.1 at 2023-02-22 20:06:33 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"nome"=>"\"Anderson\"", "curso"=>"\"Rails\""}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.5ms | Allocations: 51)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 2472)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 2796)
+
+
+Started GET "/inicio?nome=%22Anderson%22&curso=%22Rails%22" for 127.0.0.1 at 2023-02-22 20:19:00 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"nome"=>"\"Anderson\"", "curso"=>"\"Rails\""}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 2.1ms | Allocations: 236)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 639)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 3477)
+Completed 200 OK in 19ms (Views: 17.7ms | Allocations: 4582)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-02-22 20:19:40 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:25
+  Rendered coins/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2410)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 4815)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.5ms | Allocations: 5764)
+
+
+Started GET "/coins/2" for 127.0.0.1 at 2023-02-22 20:19:42 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.6ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:63:in `set_coin'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/show.html.erb within layouts/application
+  Rendered coins/_coin.html.erb (Duration: 3.6ms | Allocations: 269)
+  Rendered coins/show.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1122)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 3300)
+Completed 200 OK in 23ms (Views: 15.2ms | ActiveRecord: 0.6ms | Allocations: 4222)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-02-22 20:19:45 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.4ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:25
+  Rendered coins/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 1540)
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 3737)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.4ms | Allocations: 4065)
+
+
+Started GET "/coins/2/edit" for 127.0.0.1 at 2023-02-22 20:19:47 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:63:in `set_coin'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/edit.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 94.0ms | Allocations: 6340)
+  Rendered coins/edit.html.erb within layouts/application (Duration: 97.2ms | Allocations: 6814)
+  Rendered layout layouts/application.html.erb (Duration: 102.2ms | Allocations: 9108)
+Completed 200 OK in 109ms (Views: 103.6ms | ActiveRecord: 0.3ms | Allocations: 9947)
+
+
+Started GET "/coins/2/edit" for 127.0.0.1 at 2023-02-22 20:25:06 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:63:in `set_coin'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/edit.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 4.9ms | Allocations: 1952)
+  Rendered coins/edit.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2489)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 5092)
+Completed 200 OK in 20ms (Views: 15.9ms | ActiveRecord: 0.8ms | Allocations: 6911)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-02-22 20:25:08 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.6ms | Allocations: 236)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 652)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3256)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 4191)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-02-22 20:25:24 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.6ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:25
+  Rendered coins/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2099)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 4302)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.6ms | Allocations: 4729)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-02-22 20:25:55 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:25
+  Rendered coins/index.html.erb within layouts/adm (Duration: 11.2ms | Allocations: 3920)
+  Rendered layout layouts/adm.html.erb (Duration: 33.0ms | Allocations: 18117)
+Completed 200 OK in 38ms (Views: 35.0ms | ActiveRecord: 1.5ms | Allocations: 19792)
+
+

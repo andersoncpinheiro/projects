@@ -1,0 +1,14 @@
+{
+  "name": "buger-eats",
+  "version": "1.0.0",
+  "description": "Ambiente para estudo cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Anderson Pinheiro",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^12.7.0"
+  }
+}

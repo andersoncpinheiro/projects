@@ -1,0 +1,12 @@
+Proxy
+
+login:
+anderson.malveira
+
+senha:
+7a9xk6T52Qs6
+
+
+Micro Fora
+login: andersoncpinheiro
+

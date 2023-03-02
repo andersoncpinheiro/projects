@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+ <li>
+    <%= link_to "Cadastrar Moedas", coins_path %> 
+    </li>
+<h1>Tipos de Mineração</h1>
+
+<div id="mining_types">
+  <% @mining_types.each do |mining_type| %>
+    <%= render mining_type %>
+    <p>
+      <%= link_to "Mostrar", mining_type %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Novo Tipo", new_mining_type_path %>

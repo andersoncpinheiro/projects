@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :mining_types
   get 'welcome/index'
   resources :coins
   #resources allows to create 7 new routes, to created a crud experience  

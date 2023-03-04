@@ -20,7 +20,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_02_010257) do
   end
 
   create_table "mining_types", force: :cascade do |t|
-    t.string "name"
+    t.string "description"
     t.string "acronym"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

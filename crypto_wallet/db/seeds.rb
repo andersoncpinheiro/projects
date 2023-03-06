@@ -12,7 +12,7 @@
 # coins = [
 #     {description:"Bitcoin",
 #         acronym:"BTC",
-#         url_image:"https://logodownload.org/wp-content/uploads/2017/06/bitcoin-logo-0-1.png"},
+#         url_image:"https://cdn-icons-png.flaticon.com/512/825/825540.png"},
 #     { description:"Ethereum",
 #         acronym:"ETH",
 #         url_image:"https://d33wubrfki0l68.cloudfront.net/10c3a479c1fbfbdb6a62952ba1b1d797d8e6abf4/dc925/static/6b935ac0e6194247347855dc3d328e83/cef8b/eth-diamond-black.png"},

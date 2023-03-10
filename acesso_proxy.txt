@@ -9,4 +9,9 @@ senha:
 
 Micro Fora
 login: andersoncpinheiro
+diaria do arquivo
+
+
+
+
 

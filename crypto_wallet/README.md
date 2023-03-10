@@ -34,3 +34,6 @@ asdf local ruby colocar a versão
 
 instalar versão especifica
 asdf install ruby 3.2.0
+
+andersoncpinheiro
+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

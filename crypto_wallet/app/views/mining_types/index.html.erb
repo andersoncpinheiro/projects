@@ -4,13 +4,29 @@
     </li>
 <h1>Tipos de Mineração</h1>
 
-<div id="mining_types">
-  <% @mining_types.each do |mining_type| %>
-    <%= render mining_type %>
-    <p>
-      <%= link_to "Mostrar", mining_type %>
-    </p>
-  <% end %>
-</div>
 
-<%= link_to "Novo Tipo", new_mining_type_path %>
+<table>
+	<thead>
+	<tr><strong>
+		<th><%=@mining_types.human_attribute_name(:description)%></th>
+		<th><%=@mining_types.human_attribute_name(:acronym)%></th>
+		<th colspan="2"></th>
+		</strong>
+	</tr>
+	</thead>
+
+
+
+<tbody>
+  <% @mining_types.each do |mining_type| %>
+    <tr>
+      <td><%= mining_type.description%></td>
+      <td><%= mining_type.acronym%></td>
+      <td><%= link_to t('links.show'), mining_type%></td>
+      <td><%= link_to t('links.edit'), edit_mining_type_path(mining_type)%></td>
+      <td><%= link_to t('links.delete'), mining_type, method: :delete, data:{confirm: t('confirmation')}%></td>
+      </tr> 
+    <%end%> 
+</tbody>
+<br>
+<%= link_to "New Mining Type", new_mining_type_path %>

@@ -1,0 +1,8 @@
+pt-BR:
+  hello: "Olá gente"
+  actual_locale: "Português do Brasil" 
+  confirmation: "Você tem certeza?"
+  links:
+    edit: "Editar"
+    show: "Mostrar"
+    delete: "Apagar"

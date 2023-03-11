@@ -1,8 +1,8 @@
 <p> Ambiente de <%= ambiente_rails %></p>
 
 <h1>Seja bem vindo!  </h1>
-
-<p>Anderson Pinheiro</p>
+<p><%= t('hello')%></p>
+<p>O idioma que está sendo usado nessa aplicação é: <%= t('actual_locale')%></p>
 
 <%= render"menu" %>
 
@@ -12,5 +12,5 @@ Desenvolvido por:
 <br>
 Projeto do curso: <strong><%= @curso %></strong>
 
-<p> A data de hoje é: <%= data_br(Date.today)%> <br>
+<p> A data de hoje é: <%= I18n.l(Date.today)%> <br>
  Horário atual <%= hora_atual %></p>

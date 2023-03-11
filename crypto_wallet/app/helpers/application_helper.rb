@@ -7,6 +7,13 @@ module ApplicationHelper
         time.strftime("%k:%M:%S") 
     end 
     
+    def locale
+        if I18n.locale == :en
+            "Inglês Americano"
+        else "Português do Brasil" 
+        end
+    end
+
     def ambiente_rails
     	if Rails.env.development?
     	"Desenvolvimento"

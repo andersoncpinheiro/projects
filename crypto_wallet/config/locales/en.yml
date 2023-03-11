@@ -31,3 +31,9 @@
 
 en:
   hello: "Hello world"
+  actual_locale: "English(International)" 
+  confirmation: 'Are you sure?'
+  links:
+    edit: "Edit"
+    show: "Show"
+    delete: "Delete"

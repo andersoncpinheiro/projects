@@ -13,9 +13,10 @@
 <table>
 	<thead>
 	<tr><strong>
-		<th>Descrição</th>
-		<th>Sigla</th>
-		<th>Url Imagem</th>
+	<!--Translation for active record Models<%=@coins.human_attribute_name(:description)%>-->
+		<th><%=@coins.human_attribute_name(:description)%></th>
+		<th><%=@coins.human_attribute_name(:acronym)%></th>
+		<th><%=@coins.human_attribute_name(:url_image)%></th>
 		<th>Tipo de Mineração</th>
 		<th colspan="3"></th>
 		</strong>
@@ -29,9 +30,9 @@
 			<td><%= coin.acronym %></td>
 			<td> <img src="<%= coin.url_image%>" width="25p" height="25px"> </td>
 			<td> <%= coin.mining_type.description %></td>
-			<td><%= link_to "Mostrar", coin %></td>
-			<td><%= link_to "Editar", edit_coin_path(coin)%></td>
-			<td><%= link_to "Excluir", coin, method: :delete, data:{confirm: 'Tem certeza?'}%></td>
+			<td><%= link_to t('links.show'), coin %></td>
+			<td><%= link_to t('links.edit'), edit_coin_path(coin)%></td>
+			<td><%= link_to t('links.delete'), coin, method: :delete, data:{confirm: t('confirmation')}%></td>
 				
 		</tr>
     <%end%>

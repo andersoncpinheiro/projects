@@ -31,9 +31,17 @@
 
 en:
   hello: "Hello world"
+  mining_types: "Mining Types"
   actual_locale: "English(International)" 
   confirmation: 'Are you sure?'
+  create_coins: "Create Coins"
   links:
     edit: "Edit"
-    show: "Show"
+    Show: "Show"
     delete: "Delete"
+    back: "Back"
+    New: "New"
+    home: "Home"
+    create_coins: "Create Coins"
+    create_mining: "Create Mining"
+

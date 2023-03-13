@@ -1,8 +1,15 @@
 pt-BR:
   hello: "Olá gente"
+  mining_types: "Tipos de Mineração"
   actual_locale: "Português do Brasil" 
   confirmation: "Você tem certeza?"
+  create_coins: "Cadastrar Moedas"
   links:
     edit: "Editar"
     show: "Mostrar"
     delete: "Apagar"
+    back: "Voltar"
+    new: "Novo"
+    home: "Pàgina Inicial"
+    create_coins: "Cadastrar Moedas"
+    create_mining: "Cadastrar Tipo"

@@ -1,8 +1,8 @@
 <p style="color: green"><%= notice %></p>
- <li>
-    <%= link_to "Cadastrar Moedas", coins_path %> 
-    </li>
-<h1>Tipos de Mineração</h1>
+    <li><%= link_to t('create_coins'), coins_path %></li>
+    <li> <%= link_to t('links.create_mining'), new_mining_type_path %></li>
+    <li> <%= link_to t('links.back'), inicio_path %></li>
+<h1><%= link_to t('mining_types')%></h1>
 
 
 <table>
@@ -29,4 +29,5 @@
     <%end%> 
 </tbody>
 <br>
-<%= link_to "New Mining Type", new_mining_type_path %>
+
+

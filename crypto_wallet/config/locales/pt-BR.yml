@@ -1,5 +1,10 @@
 pt-BR:
-  hello: "Olá gente"
+  be_welcome: "Seja Bem Vindo!"
+  txt_language_information: "O idioma que está sendo usado nessa aplicação é:"
+  developed_by: "Desenvolvido por: "
+  hello: "Olá gente!"
+  environment: "Ambiente"
+  current_date: "Data Atual"
   mining_types: "Tipos de Mineração"
   actual_locale: "Português do Brasil" 
   confirmation: "Você tem certeza?"

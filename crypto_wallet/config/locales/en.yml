@@ -30,7 +30,12 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  be_welcome: "Be Welcome!"
+  txt_language_information: "The language being used in this application is:"
+  developed_by: "Developed by: "
+  hello: "Hello everyone!"
+  environment: "Environment"
+  current_date: "Current Date"
   mining_types: "Mining Types"
   actual_locale: "English(International)" 
   confirmation: 'Are you sure?'

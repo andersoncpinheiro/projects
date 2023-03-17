@@ -1,19 +1,20 @@
 <p><%= link_to'Português', root_path(locale: 'pt-BR')%></p>
 <p><%= link_to'English', root_path(locale: 'en')%></p>
 
-<p> Ambiente de <%= ambiente_rails %></p>
+<p> <%=t('environment')%> <%= ambiente_rails %></p>
 
-<h1>Seja bem vindo!  </h1>
+<h1><%= t('be_welcome')%> </h1>
 <p><%= t('hello')%></p>
-<p>O idioma que está sendo usado nessa aplicação é: <%= t('actual_locale')%></p>
+<p><%=t('txt_language_information')%> <%= t('actual_locale')%></p>
 
 <%= render"menu" %>
 
 
-Desenvolvido por:
+<%= t('developed_by')%>
 <strong><%= @nome %></strong>
 <br>
 Projeto do curso: <strong><%= @curso %></strong>
 
-<p> A data de hoje é: <%= I18n.l(Date.today)%> <br>
+<p> <%=t('current_date')%> <%= I18n.l(Date.today)%> <br>
  Horário atual <%= hora_atual %></p>
+

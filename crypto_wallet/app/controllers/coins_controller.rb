@@ -54,7 +54,7 @@ class CoinsController < ApplicationController
     @coin.destroy
 
     respond_to do |format|
-      format.html { redirect_to coins_url, notice: "A moeda foi excluida com sucesso!." }
+      format.html { redirect_to coins_url, notice: "A moeda foi excluida com sucesso!" }
       format.json { head :no_content }
     end
   end

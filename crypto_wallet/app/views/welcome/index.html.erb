@@ -4,18 +4,18 @@
 
 <p> <%=t('environment')%> <%= ambiente_rails %></p>
 
-<h1><%= t('be_welcome')%> </h1>
+<h1><%= t('app_name')%> </h1>
     <p><%= t('hello')%></p>
     <p><%=t('txt_language_information')%> <%= t('actual_locale')%></p>
 
     <%= render"menu" %>
 
 
-    <%= t('developed_by')%>
+<!--    <%= t('developed_by')%>
     <strong><%= @nome %></strong>
 <br>
 Projeto do curso: <strong><%= @curso %></strong>
-
+-->
     <p> <%=t('current_date')%> <%= I18n.l(Date.today)%> <br>
- Horário atual <%= hora_atual %></p>
+ <%=t('current_hour')%> <%= hora_atual %></p>
 

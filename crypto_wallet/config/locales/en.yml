@@ -30,17 +30,26 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  be_welcome: "Be Welcome!"
+  app_name: "Crypto Coin Wallet"
   txt_language_information: "The language being used in this application is:"
   developed_by: "Developed by: "
-  hello: "Hello everyone!"
+  hello: "This is an app where you can register your virtual coins"
   environment: "Environment"
   current_date: "Current Date"
   current_hour: "Current Hour"
   mining_types: "Mining Types"
+  edit_mining_types: "Edit mining types"
+  edit_coins: "Edit Coins"
   actual_locale: "English(International)" 
   confirmation: 'Are you sure?'
+  new_coin: "Nem Coin"
   create_coins: "Create Coins"
+  description: "Description"
+  acronym: "Acronym"
+  image: "Image"
+  url_image: "Url Image"
+  select: "select"
+  success: "Currency successfully deleted!"
   links:
     edit: "Edit"
     Show: "Show"

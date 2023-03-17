@@ -9165,3 +9165,1113 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 3305)
 
 
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 11:57:58 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 91)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 391)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2877)
+Completed 200 OK in 4ms (Views: 3.8ms | Allocations: 3294)
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2023-03-17 11:58:00 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.4ms | Allocations: 91)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 391)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2877)
+Completed 200 OK in 10ms (Views: 8.0ms | Allocations: 3337)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-03-17 11:58:04 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:27
+  [1m[36mMiningType Load (0.3ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mMiningType Load (0.2ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  Rendered coins/index.html.erb within layouts/adm (Duration: 19.0ms | Allocations: 4414)
+  Rendered layout layouts/adm.html.erb (Duration: 23.5ms | Allocations: 6791)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 1.5ms | Allocations: 7189)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 11:58:07 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 91)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 391)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2877)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 3281)
+
+
+Started GET "/mining_types" for 127.0.0.1 at 2023-03-17 11:58:08 -0300
+Processing by MiningTypesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:21
+  Rendered mining_types/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1575)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3952)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.1ms | Allocations: 4369)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 11:58:11 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 91)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 391)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2877)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 3295)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-03-17 11:58:13 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:27
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  Rendered coins/index.html.erb within layouts/adm (Duration: 5.6ms | Allocations: 4207)
+  Rendered layout layouts/adm.html.erb (Duration: 7.8ms | Allocations: 6584)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.2ms | Allocations: 6978)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 11:58:16 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 91)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 391)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2877)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 3289)
+
+
+Started GET "/?locale=en" for 127.0.0.1 at 2023-03-17 11:58:17 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.4ms | Allocations: 91)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 391)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 2877)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 3280)
+
+
+Started GET "/mining_types" for 127.0.0.1 at 2023-03-17 11:58:18 -0300
+Processing by MiningTypesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[36mMiningType Load (0.2ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:21
+  Rendered mining_types/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1746)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 4123)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.2ms | Allocations: 4531)
+
+
+Started GET "/mining_types/1" for 127.0.0.1 at 2023-03-17 11:58:20 -0300
+Processing by MiningTypesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMiningType Load (0.2ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mining_types_controller.rb:63:in `set_mining_type'
+  Rendering layout layouts/application.html.erb
+  Rendering mining_types/show.html.erb within layouts/application
+  Rendered mining_types/_mining_type.html.erb (Duration: 0.2ms | Allocations: 21)
+  Rendered mining_types/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 526)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 2890)
+Completed 200 OK in 15ms (Views: 11.4ms | ActiveRecord: 0.2ms | Allocations: 3735)
+
+
+Started GET "/mining_types" for 127.0.0.1 at 2023-03-17 11:58:25 -0300
+Processing by MiningTypesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:21
+  Rendered mining_types/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1745)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 4122)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.1ms | Allocations: 4540)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-03-17 11:58:27 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:27
+  [1m[36mMiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  Rendered coins/index.html.erb within layouts/adm (Duration: 5.8ms | Allocations: 4570)
+  Rendered layout layouts/adm.html.erb (Duration: 8.0ms | Allocations: 6947)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.2ms | Allocations: 7347)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 12:01:21 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.2ms | Allocations: 101)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 39.9ms | Allocations: 38664)
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 52075)
+Completed 200 OK in 50ms (Views: 49.4ms | Allocations: 53121)
+
+
+Started GET "/mining_types" for 127.0.0.1 at 2023-03-17 12:01:24 -0300
+Processing by MiningTypesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:21
+  Rendered mining_types/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 4681)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 7257)
+Completed 200 OK in 16ms (Views: 10.0ms | ActiveRecord: 0.6ms | Allocations: 10201)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 12:01:26 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 91)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 405)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2891)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 3340)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-03-17 12:01:27 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:27
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  Rendered coins/index.html.erb within layouts/adm (Duration: 18.2ms | Allocations: 8706)
+  Rendered layout layouts/adm.html.erb (Duration: 21.5ms | Allocations: 11281)
+Completed 200 OK in 32ms (Views: 22.8ms | ActiveRecord: 1.2ms | Allocations: 13995)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-03-17 12:02:25 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:27
+  [1m[36mMiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  Rendered coins/index.html.erb within layouts/adm (Duration: 10.0ms | Allocations: 5450)
+  Rendered layout layouts/adm.html.erb (Duration: 13.6ms | Allocations: 8267)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.2ms | Allocations: 9470)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 12:02:27 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.7ms | Allocations: 259)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1115)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 4085)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 5179)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-03-17 12:02:29 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:27
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mMiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  Rendered coins/index.html.erb within layouts/adm (Duration: 8.5ms | Allocations: 4724)
+  Rendered layout layouts/adm.html.erb (Duration: 12.3ms | Allocations: 7101)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.3ms | Allocations: 7532)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 12:02:30 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 91)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 391)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2877)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 3310)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-03-17 12:02:31 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.6ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:27
+  [1m[36mMiningType Load (0.2ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mMiningType Load (0.2ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  Rendered coins/index.html.erb within layouts/adm (Duration: 19.0ms | Allocations: 4570)
+  Rendered layout layouts/adm.html.erb (Duration: 23.7ms | Allocations: 6947)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 1.0ms | Allocations: 7343)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-03-17 12:02:33 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.4ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:27
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mMiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  Rendered coins/index.html.erb within layouts/adm (Duration: 9.9ms | Allocations: 4570)
+  Rendered layout layouts/adm.html.erb (Duration: 12.7ms | Allocations: 6947)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.5ms | Allocations: 7343)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-03-17 12:02:55 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:27
+  [1m[36mMiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mMiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  Rendered coins/index.html.erb within layouts/adm (Duration: 7.0ms | Allocations: 5445)
+  Rendered layout layouts/adm.html.erb (Duration: 9.5ms | Allocations: 8262)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.2ms | Allocations: 9414)
+
+
+Started GET "/coins/new" for 127.0.0.1 at 2023-03-17 12:03:00 -0300
+Processing by CoinsController#new as HTML
+  [1m[36mMiningType Pluck (0.3ms)[0m  [1m[34mSELECT "mining_types"."description", "mining_types"."id" FROM "mining_types"[0m
+  ↳ app/controllers/coins_controller.rb:65:in `set_mining_type_options'
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/new.html.erb within layouts/adm
+  Rendered coins/_form.html.erb (Duration: 8.0ms | Allocations: 2178)
+  Rendered coins/new.html.erb within layouts/adm (Duration: 10.6ms | Allocations: 2596)
+  Rendered layout layouts/adm.html.erb (Duration: 15.4ms | Allocations: 4963)
+Completed 200 OK in 20ms (Views: 16.8ms | ActiveRecord: 0.3ms | Allocations: 5949)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 12:03:07 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.4ms | Allocations: 259)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1115)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 4085)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 5158)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-03-17 12:03:11 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:27
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  Rendered coins/index.html.erb within layouts/adm (Duration: 7.3ms | Allocations: 4671)
+  Rendered layout layouts/adm.html.erb (Duration: 14.6ms | Allocations: 7066)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.2ms | Allocations: 7416)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 12:03:33 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 1.0ms | Allocations: 259)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1120)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 4091)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 5303)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-03-17 12:03:35 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:27
+  [1m[36mMiningType Load (0.2ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mMiningType Load (0.4ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  Rendered coins/index.html.erb within layouts/adm (Duration: 19.3ms | Allocations: 5456)
+  Rendered layout layouts/adm.html.erb (Duration: 23.7ms | Allocations: 8273)
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 1.0ms | Allocations: 9334)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 12:03:39 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 91)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 409)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2895)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 3352)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-03-17 12:03:41 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:27
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  Rendered coins/index.html.erb within layouts/adm (Duration: 7.5ms | Allocations: 4582)
+  Rendered layout layouts/adm.html.erb (Duration: 9.7ms | Allocations: 6959)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.3ms | Allocations: 7347)
+
+
+Started GET "/coins/2" for 127.0.0.1 at 2023-03-17 12:03:43 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.4ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:71:in `set_coin'
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/show.html.erb within layouts/adm
+  [1m[36mMiningType Load (0.2ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/_coin.html.erb:18
+  Rendered coins/_coin.html.erb (Duration: 4.4ms | Allocations: 918)
+  Rendered coins/show.html.erb within layouts/adm (Duration: 8.8ms | Allocations: 1778)
+  Rendered layout layouts/adm.html.erb (Duration: 15.9ms | Allocations: 4142)
+Completed 200 OK in 22ms (Views: 16.7ms | ActiveRecord: 0.6ms | Allocations: 5669)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-03-17 12:03:47 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:27
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  Rendered coins/index.html.erb within layouts/adm (Duration: 7.7ms | Allocations: 4582)
+  Rendered layout layouts/adm.html.erb (Duration: 10.1ms | Allocations: 6959)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.3ms | Allocations: 7345)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-03-17 12:04:41 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:27
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mMiningType Load (0.3ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  Rendered coins/index.html.erb within layouts/adm (Duration: 13.8ms | Allocations: 5457)
+  Rendered layout layouts/adm.html.erb (Duration: 17.0ms | Allocations: 8274)
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.6ms | Allocations: 9422)
+
+
+Started GET "/coins/2" for 127.0.0.1 at 2023-03-17 12:04:43 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:71:in `set_coin'
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/show.html.erb within layouts/adm
+  [1m[36mMiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/_coin.html.erb:18
+  Rendered coins/_coin.html.erb (Duration: 1.4ms | Allocations: 917)
+  Rendered coins/show.html.erb within layouts/adm (Duration: 2.9ms | Allocations: 1770)
+  Rendered layout layouts/adm.html.erb (Duration: 5.1ms | Allocations: 4134)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.1ms | Allocations: 5061)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-03-17 12:04:47 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:27
+  [1m[36mMiningType Load (0.2ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mMiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  Rendered coins/index.html.erb within layouts/adm (Duration: 5.3ms | Allocations: 4582)
+  Rendered layout layouts/adm.html.erb (Duration: 7.4ms | Allocations: 6959)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.3ms | Allocations: 7356)
+
+
+Started GET "/coins/2/edit" for 127.0.0.1 at 2023-03-17 12:04:48 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:71:in `set_coin'
+  [1m[36mMiningType Pluck (0.2ms)[0m  [1m[34mSELECT "mining_types"."description", "mining_types"."id" FROM "mining_types"[0m
+  ↳ app/controllers/coins_controller.rb:65:in `set_mining_type_options'
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/edit.html.erb within layouts/adm
+  Rendered coins/_form.html.erb (Duration: 3.4ms | Allocations: 2232)
+  Rendered coins/edit.html.erb within layouts/adm (Duration: 5.0ms | Allocations: 2673)
+  Rendered layout layouts/adm.html.erb (Duration: 7.1ms | Allocations: 5037)
+Completed 200 OK in 13ms (Views: 8.0ms | ActiveRecord: 0.4ms | Allocations: 6380)
+
+
+Started GET "/coins/2/edit" for 127.0.0.1 at 2023-03-17 12:05:25 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:71:in `set_coin'
+  [1m[36mMiningType Pluck (0.1ms)[0m  [1m[34mSELECT "mining_types"."description", "mining_types"."id" FROM "mining_types"[0m
+  ↳ app/controllers/coins_controller.rb:65:in `set_mining_type_options'
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/edit.html.erb within layouts/adm
+  Rendered coins/_form.html.erb (Duration: 4.6ms | Allocations: 2337)
+  Rendered coins/edit.html.erb within layouts/adm (Duration: 6.3ms | Allocations: 2996)
+  Rendered layout layouts/adm.html.erb (Duration: 9.1ms | Allocations: 5785)
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 0.2ms | Allocations: 7792)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 12:05:28 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.4ms | Allocations: 259)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1115)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 4085)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 5187)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-03-17 12:05:30 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:27
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  Rendered coins/index.html.erb within layouts/adm (Duration: 8.7ms | Allocations: 5271)
+  Rendered layout layouts/adm.html.erb (Duration: 11.0ms | Allocations: 7648)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.4ms | Allocations: 8154)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-03-17 12:05:54 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.7ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:27
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mMiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  Rendered coins/index.html.erb within layouts/adm (Duration: 10.4ms | Allocations: 5456)
+  Rendered layout layouts/adm.html.erb (Duration: 13.2ms | Allocations: 8273)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.8ms | Allocations: 9421)
+
+
+Started GET "/coins/new" for 127.0.0.1 at 2023-03-17 12:06:05 -0300
+Processing by CoinsController#new as HTML
+  [1m[36mMiningType Pluck (0.2ms)[0m  [1m[34mSELECT "mining_types"."description", "mining_types"."id" FROM "mining_types"[0m
+  ↳ app/controllers/coins_controller.rb:65:in `set_mining_type_options'
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/new.html.erb within layouts/adm
+  Rendered coins/_form.html.erb (Duration: 8.9ms | Allocations: 2235)
+  Rendered coins/new.html.erb within layouts/adm (Duration: 11.8ms | Allocations: 2752)
+  Rendered layout layouts/adm.html.erb (Duration: 24.4ms | Allocations: 5546)
+Completed 200 OK in 32ms (Views: 27.7ms | ActiveRecord: 0.2ms | Allocations: 7181)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 12:06:07 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 2.4ms | Allocations: 259)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1118)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 4088)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 5189)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-03-17 12:06:08 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:27
+  [1m[36mMiningType Load (0.2ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mMiningType Load (0.2ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:32
+  Rendered coins/index.html.erb within layouts/adm (Duration: 21.2ms | Allocations: 5279)
+  Rendered layout layouts/adm.html.erb (Duration: 25.9ms | Allocations: 7661)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.7ms | Allocations: 8169)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-03-17 12:06:44 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:25
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:30
+  [1m[36mMiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:30
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:30
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:30
+  Rendered coins/index.html.erb within layouts/adm (Duration: 12.0ms | Allocations: 5451)
+  Rendered layout layouts/adm.html.erb (Duration: 15.0ms | Allocations: 8268)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.3ms | Allocations: 9423)
+
+
+Started GET "/coins/2" for 127.0.0.1 at 2023-03-17 12:06:47 -0300
+Processing by CoinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:71:in `set_coin'
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/show.html.erb within layouts/adm
+  [1m[36mMiningType Load (0.2ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/_coin.html.erb:18
+  Rendered coins/_coin.html.erb (Duration: 2.8ms | Allocations: 917)
+  Rendered coins/show.html.erb within layouts/adm (Duration: 4.9ms | Allocations: 1770)
+  Rendered layout layouts/adm.html.erb (Duration: 7.9ms | Allocations: 4134)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.2ms | Allocations: 5069)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-03-17 12:06:49 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:25
+  [1m[36mMiningType Load (0.2ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:30
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:30
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:30
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:30
+  Rendered coins/index.html.erb within layouts/adm (Duration: 16.9ms | Allocations: 4582)
+  Rendered layout layouts/adm.html.erb (Duration: 21.2ms | Allocations: 6959)
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 0.6ms | Allocations: 7356)
+
+
+Started GET "/coins/2/edit" for 127.0.0.1 at 2023-03-17 12:06:50 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:71:in `set_coin'
+  [1m[36mMiningType Pluck (0.0ms)[0m  [1m[34mSELECT "mining_types"."description", "mining_types"."id" FROM "mining_types"[0m
+  ↳ app/controllers/coins_controller.rb:65:in `set_mining_type_options'
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/edit.html.erb within layouts/adm
+  Rendered coins/_form.html.erb (Duration: 3.0ms | Allocations: 2231)
+  Rendered coins/edit.html.erb within layouts/adm (Duration: 3.9ms | Allocations: 2764)
+  Rendered layout layouts/adm.html.erb (Duration: 6.2ms | Allocations: 5128)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.1ms | Allocations: 6458)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-03-17 12:06:54 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:25
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:30
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:30
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:30
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:30
+  Rendered coins/index.html.erb within layouts/adm (Duration: 6.6ms | Allocations: 4582)
+  Rendered layout layouts/adm.html.erb (Duration: 8.6ms | Allocations: 6959)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.3ms | Allocations: 7361)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 12:06:55 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 1.4ms | Allocations: 259)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1116)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 4086)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 5146)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 12:18:47 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.8ms | Allocations: 259)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1116)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 4091)
+Completed 200 OK in 9ms (Views: 7.0ms | Allocations: 5317)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 12:19:00 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1329)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1410)
+Completed 500 Internal Server Error in 5ms (Allocations: 2614)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p><%= link_to''Português'', root_path(locale: 'pt-BR')%></p>
+<p><%= link_to'English', root_path(locale: 'en')%></p>
+
+<p> <%=t('environment')%> <%= ambiente_rails %></p>
+
+<h1><%= t('be_welcome')%> </h1>
+<p><%= t('hello')%></p>
+<p><%=t('txt_language_information')%> <%= t('actual_locale')%></p>
+
+<%= render"menu" %>
+
+
+<%= t('developed_by')%>
+<strong><%= @nome %></strong>
+<br>
+Projeto do curso: <strong><%= @curso %></strong>
+
+<p> <%=t('current_date')%> <%= I18n.l(Date.today)%> <br>
+ Horário atual <%= hora_atual %></p>
+
+
+):
+1:    <p><%= link_to''Português'', root_path(locale: 'pt-BR')%></p>
+2:    <p><%= link_to'English', root_path(locale: 'en')%></p>
+3:    
+4:    <p> <%=t('environment')%> <%= ambiente_rails %></p>
+5:    
+6:    <h1><%= t('be_welcome')%> </h1>
+7:    <p><%= t('hello')%></p>
+8:    <p><%=t('txt_language_information')%> <%= t('actual_locale')%></p>
+9:    
+10:    <%= render"menu" %>
+11:    
+12:    
+13:    <%= t('developed_by')%>
+14:    <strong><%= @nome %></strong>
+15:    <br>
+16:    Projeto do curso: <strong><%= @curso %></strong>
+17:    
+18:    <p> <%=t('current_date')%> <%= I18n.l(Date.today)%> <br>
+19:     Horário atual <%= hora_atual %></p>
+  
+app/views/welcome/index.html.erb:1: syntax error, unexpected constant, expecting ')'
+app/views/welcome/index.html.erb:1: syntax error, unexpected constant, expecting ')'
+app/views/welcome/index.html.erb:1: syntax error, unexpected constant, expecting ')'
+app/views/welcome/index.html.erb:1: syntax error, unexpected constant, expecting ')'
+app/views/welcome/index.html.erb:1: syntax error, unexpected constant, expecting ')'
+app/views/welcome/index.html.erb:1: syntax error, unexpected constant, expecting ')'
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 12:19:10 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 1.2ms | Allocations: 259)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1116)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 4108)
+Completed 200 OK in 14ms (Views: 11.8ms | Allocations: 5340)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 13:11:38 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.7ms | Allocations: 259)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1117)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 4092)
+Completed 200 OK in 8ms (Views: 7.2ms | Allocations: 5325)
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2023-03-17 13:11:40 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 391)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2882)
+Completed 200 OK in 5ms (Views: 4.0ms | Allocations: 3376)
+
+
+Started GET "/?locale=pt-BR" for 127.0.0.1 at 2023-03-17 13:11:41 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 390)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2881)
+Completed 200 OK in 5ms (Views: 4.8ms | Allocations: 3292)
+
+
+Started GET "/?locale=en" for 127.0.0.1 at 2023-03-17 13:11:43 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.5ms | Allocations: 91)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 390)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 2881)
+Completed 200 OK in 12ms (Views: 10.7ms | Allocations: 3301)
+
+
+Started GET "/coins" for 127.0.0.1 at 2023-03-17 13:11:44 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/adm.html.erb
+  Rendering coins/index.html.erb within layouts/adm
+  [1m[36mCoin Load (0.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:25
+  [1m[36mMiningType Load (0.3ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:30
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:30
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:30
+  [1m[36mCACHE MiningType Load (0.0ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types" WHERE "mining_types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/coins/index.html.erb:30
+  Rendered coins/index.html.erb within layouts/adm (Duration: 22.1ms | Allocations: 5655)
+  Rendered layout layouts/adm.html.erb (Duration: 27.2ms | Allocations: 8477)
+Completed 200 OK in 32ms (Views: 29.9ms | ActiveRecord: 1.8ms | Allocations: 9507)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 13:11:45 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 408)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2899)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 3348)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 13:12:07 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 1.5ms | Allocations: 259)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1116)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 4091)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 5301)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 13:15:36 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2579)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2659)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 3857)
+
+
+  
+ActionView::Template::Error (undefined method `symbolize_keys' for "/?locale=pt-BR":String):
+    1: <p><%= link_to image_tag'br_flag.jpg', root_path(locale: 'pt-BR')%></p>
+    2: <p><%= link_to'English', root_path(locale: 'en')%></p>
+    3: 
+    4: <p> <%=t('environment')%> <%= ambiente_rails %></p>
+  
+app/views/welcome/index.html.erb:1
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 13:15:50 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.6ms | Allocations: 259)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1115)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 4107)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 5339)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 13:16:03 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.6ms | Allocations: 259)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1117)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 4092)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 5339)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 13:17:34 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1329)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1410)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2609)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p><%= link_to'Português', root_path(locale: 'pt-BR', image_tag "flag_br.jpg", id:"logo" )%></p>
+<p><%= link_to'English', root_path(locale: 'en')%></p>
+
+<p> <%=t('environment')%> <%= ambiente_rails %></p>
+
+<h1><%= t('be_welcome')%> </h1>
+<p><%= t('hello')%></p>
+<p><%=t('txt_language_information')%> <%= t('actual_locale')%></p>
+
+<%= render"menu" %>
+
+
+<%= t('developed_by')%>
+<strong><%= @nome %></strong>
+<br>
+Projeto do curso: <strong><%= @curso %></strong>
+
+<p> <%=t('current_date')%> <%= I18n.l(Date.today)%> <br>
+ Horário atual <%= hora_atual %></p>
+
+
+):
+1:    <p><%= link_to'Português', root_path(locale: 'pt-BR', image_tag "flag_br.jpg", id:"logo" )%></p>
+2:    <p><%= link_to'English', root_path(locale: 'en')%></p>
+3:    
+4:    <p> <%=t('environment')%> <%= ambiente_rails %></p>
+5:    
+6:    <h1><%= t('be_welcome')%> </h1>
+7:    <p><%= t('hello')%></p>
+8:    <p><%=t('txt_language_information')%> <%= t('actual_locale')%></p>
+9:    
+10:    <%= render"menu" %>
+11:    
+12:    
+13:    <%= t('developed_by')%>
+14:    <strong><%= @nome %></strong>
+15:    <br>
+16:    Projeto do curso: <strong><%= @curso %></strong>
+17:    
+18:    <p> <%=t('current_date')%> <%= I18n.l(Date.today)%> <br>
+19:     Horário atual <%= hora_atual %></p>
+  
+app/views/welcome/index.html.erb:1: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/welcome/index.html.erb:1: syntax error, unexpected ',', expecting ')'
+app/views/welcome/index.html.erb:1: syntax error, unexpected ')', expecting `end'
+app/views/welcome/index.html.erb:1: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/welcome/index.html.erb:1: syntax error, unexpected ',', expecting ')'
+app/views/welcome/index.html.erb:1: syntax error, unexpected ')', expecting `end'
+app/views/welcome/index.html.erb:1: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/welcome/index.html.erb:1: syntax error, unexpected ',', expecting ')'
+app/views/welcome/index.html.erb:1: syntax error, unexpected ')', expecting `end'
+app/views/welcome/index.html.erb:1: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/welcome/index.html.erb:1: syntax error, unexpected ',', expecting ')'
+app/views/welcome/index.html.erb:1: syntax error, unexpected ')', expecting `end'
+app/views/welcome/index.html.erb:1: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/welcome/index.html.erb:1: syntax error, unexpected ',', expecting ')'
+app/views/welcome/index.html.erb:1: syntax error, unexpected ')', expecting `end'
+app/views/welcome/index.html.erb:1: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/welcome/index.html.erb:1: syntax error, unexpected ',', expecting ')'
+app/views/welcome/index.html.erb:1: syntax error, unexpected ')', expecting `end'
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 13:17:57 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.4ms | Allocations: 259)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1120)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 4112)
+Completed 200 OK in 11ms (Views: 10.6ms | Allocations: 5341)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 13:20:28 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.5ms | Allocations: 259)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1128)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 4103)
+Completed 200 OK in 7ms (Views: 6.2ms | Allocations: 5327)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/images/flag.jpg"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 13:23:48 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.4ms | Allocations: 259)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1121)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 4096)
+Completed 200 OK in 9ms (Views: 6.6ms | Allocations: 5314)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/images/flag.png"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 13:23:50 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 391)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2882)
+Completed 200 OK in 7ms (Views: 5.0ms | Allocations: 3317)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/images/flag.png"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 13:24:12 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.7ms | Allocations: 259)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1121)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4113)
+Completed 200 OK in 14ms (Views: 11.0ms | Allocations: 5290)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/images/br_flag.png"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 13:24:13 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.4ms | Allocations: 91)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 391)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2899)
+Completed 200 OK in 9ms (Views: 7.7ms | Allocations: 3332)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/images/br_flag.png"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 13:24:35 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.6ms | Allocations: 259)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1120)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 4095)
+Completed 200 OK in 7ms (Views: 5.9ms | Allocations: 5292)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/images/br_flag.png"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 13:24:36 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.3ms | Allocations: 91)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 391)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2899)
+Completed 200 OK in 9ms (Views: 7.2ms | Allocations: 3338)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/images/br_flag.png"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2023-03-17 13:24:54 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.7ms | Allocations: 259)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1120)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 4112)
+Completed 200 OK in 13ms (Views: 10.5ms | Allocations: 5297)
+
+

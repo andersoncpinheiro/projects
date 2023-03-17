@@ -36,6 +36,7 @@ en:
   hello: "Hello everyone!"
   environment: "Environment"
   current_date: "Current Date"
+  current_hour: "Current Hour"
   mining_types: "Mining Types"
   actual_locale: "English(International)" 
   confirmation: 'Are you sure?'

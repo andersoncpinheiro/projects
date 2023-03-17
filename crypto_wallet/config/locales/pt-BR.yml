@@ -5,6 +5,7 @@ pt-BR:
   hello: "Olá gente!"
   environment: "Ambiente"
   current_date: "Data Atual"
+  current_hour: "Hora Atual"
   mining_types: "Tipos de Mineração"
   actual_locale: "Português do Brasil" 
   confirmation: "Você tem certeza?"

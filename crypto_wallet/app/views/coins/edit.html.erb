@@ -1,6 +1,6 @@
 <li>
     <ul>
-    <%= link_to "Páginal Inicial", inicio_path %> 
+    <%= link_to t('links.home'), inicio_path %> 
 
     </ul>
 </li>
@@ -12,6 +12,6 @@
 <br>
 
 <div>
-  <%= link_to "Mostrar", @coin %> |
-  <%= link_to "Voltar", coins_path %>
+  <%= link_to t('links.show'), @coin %> |
+  <%= link_to t('links.back'), coins_path %>
 </div>

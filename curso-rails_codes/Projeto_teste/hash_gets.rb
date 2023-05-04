@@ -23,15 +23,16 @@ def cadastrar_aluno
     
 
         puts "Deseja cadastrar mais algum registro, digite SIM ou NÂO"
-        resposta = gets.chomp
-        while resposta === "SIM" do
-            cadastrar_aluno
-        end
+        @resposta = gets.chomp
 
+             
 
+end
+
+while @resposta === "SIM" do
+    cadastrar_aluno
 end
 
 cadastrar_aluno
 
-puts @userhash
-
+        puts @userhash

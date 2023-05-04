@@ -1,6 +1,6 @@
 def cadastrar_aluno
 
-    userhash=Hash.new()
+    @userhash=Hash.new()
         
     puts "Informe o nome do titulo do campo1"
         @field1 = gets.chomp
@@ -13,18 +13,25 @@ def cadastrar_aluno
 
 
     puts "Informe o "+@field1 +" do aluno"
-        userhash[@field1]=gets.chomp
+        @userhash[@field1]=gets.chomp
 
     puts "Informe a "+@field2 +" do aluno"
-        userhash[@field2]=gets.chomp.to_i
+        @userhash[@field2]=gets.chomp.to_i
 
     puts "Informe o "+@field3 +" do aluno M ou F"
-        userhash[@field3]=gets.chomp
+       @userhash[@field3]=gets.chomp
     
-        puts userhash
 
+        puts "Deseja cadastrar mais algum registro, digite SIM ou NÂO"
+        resposta = gets.chomp
+        while resposta === "SIM" do
+            cadastrar_aluno
+        end
 
 
 end
 
 cadastrar_aluno
+
+puts @userhash
+

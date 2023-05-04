@@ -20,7 +20,7 @@ episodes.delete(2)
 puts episodes
 puts "Episodio adicionado : #{episodes.store(2, 'GOOTS')}"
 puts "Informa seu o hash possui a informação digitada: #{episodes.has_value?('Days Gone Bye')}"
-
+puts"------------------------------------------------------------------------------------"
 episodes.sort.each do |episode|
   puts "episódio: #{episode[0]} título: #{episode[1]}"
   puts "episodes.classe é uma #{episodes.class}"

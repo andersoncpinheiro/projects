@@ -1,38 +1,37 @@
-def cadastrar_aluno
-
-    @userhash=Hash.new()
-        
-    puts "Informe o nome do titulo do campo1"
-        @field1 = gets.chomp
-
-    puts "Informe o nome do titulo do campo2"
-        @field2 = gets.chomp
-
-    puts "Informe o nome do titulo do campo3"
-         @field3 = gets.chomp
-
-
-    puts "Informe o "+@field1 +" do aluno"
-        @userhash[@field1]=gets.chomp
-
-    puts "Informe a "+@field2 +" do aluno"
-        @userhash[@field2]=gets.chomp.to_i
-
-    puts "Informe o "+@field3 +" do aluno M ou F"
-       @userhash[@field3]=gets.chomp
-    
-
-        puts "Deseja cadastrar mais algum registro, digite SIM ou NÂO"
-        @resposta = gets.chomp
-
-             
-
-end
-
-while @resposta === "SIM" do
-    cadastrar_aluno
-end
-
-cadastrar_aluno
-
-        puts @userhash
+def cadastrar_registros
+    campos = []
+  
+    puts "Quantos campos deseja cadastrar?"
+    num_campos = gets.chomp.to_i
+  
+    num_campos.times do |i|
+      puts "Informe o nome do campo #{i+1}"
+      campos << gets.chomp
+    end
+  
+    registros = []
+  
+    continuar_cadastrando = true
+  
+    while continuar_cadastrando do
+      registro = {}
+  
+      campos.each do |campo|
+        puts "Informe o #{campo} do aluno"
+        registro[campo] = gets.chomp
+      end
+  
+      registros << registro
+  
+      puts "Registro adicionado: #{registro.inspect}"
+      puts "Deseja cadastrar MAIS algum registro? Digite SIM ou NÃO"
+      resposta = gets.chomp
+  
+      continuar_cadastrando = (resposta == "SIM")
+    end
+  
+    puts "Registros cadastrados:"
+    puts registros.inspect
+  end
+  
+  cadastrar_registros

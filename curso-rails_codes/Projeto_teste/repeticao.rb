@@ -3,7 +3,6 @@ def  pegaX
 	@x = gets.chomp.to_i
 
 while @x > 5 
-	puts 'Digite um número maior que 5!'
 	pegaX
 end
 	return @x
@@ -14,7 +13,6 @@ def pegaY
 	@y = gets.chomp.to_i
 
 while @y <= 5 || @y > 10  
-	puts 'Digite um número maior que 5 e menor que 10!'
 	pegaY
 end
 	return @y
@@ -30,5 +28,13 @@ end
 pegaX
 pegaY
 result
+
+
+
+['A','BB', 99].each do |i|
+	puts "O Valor lido foi:" + i.to_s
+end
+
+
 
 

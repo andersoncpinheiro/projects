@@ -36,9 +36,7 @@ def cadastrar_registros
       break
       end
 
-
       continuar_cadastrando = (resposta == "SIM")
-
 
     end
   

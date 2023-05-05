@@ -5,8 +5,8 @@ def cadastrar_registros
     num_campos = gets.chomp.to_i
   
     num_campos.times do |i|
-      puts "Informe o nome do campo #{i+1}"
-      campos << gets.chomp
+      puts "Informe o nome do campo"
+      campos << gets.chomp.upcase
     end
   
     registros = []
@@ -17,17 +17,29 @@ def cadastrar_registros
       registro = {}
   
       campos.each do |campo|
-        puts "Informe o #{campo} do aluno"
-        registro[campo] = gets.chomp
+        puts "Informe o #{campo} para cadastro"
+        registro[campo] = gets.chomp.upcase
       end
   
       registros << registro
   
       puts "Registro adicionado: #{registro.inspect}"
-      puts "Deseja cadastrar MAIS algum registro? Digite SIM ou NÃO"
-      resposta = gets.chomp
-  
+      puts "Deseja cadastrar mais algum registro? Digite SIM ou NÃO"
+      resposta = gets.chomp.upcase
+ 
+
+      while resposta != "SIM" && resposta != "NÃO" do
+        puts "Digite APENAS SIM ou NÃO"
+        resposta = gets.chomp.upcase
+        puts "Registros cadastrados:"
+        puts registros.inspect
+      break
+      end
+
+
       continuar_cadastrando = (resposta == "SIM")
+
+
     end
   
     puts "Registros cadastrados:"

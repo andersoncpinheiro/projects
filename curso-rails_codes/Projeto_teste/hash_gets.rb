@@ -5,7 +5,7 @@ def cadastrar_registros
     num_campos = gets.chomp.to_i
   
     num_campos.times do |i|
-      puts "Informe o nome do campo"
+      puts "Informe o nome do campo #{i+1}"
       campos << gets.chomp.upcase
     end
   

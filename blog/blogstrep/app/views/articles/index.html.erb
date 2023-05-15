@@ -9,7 +9,7 @@
     <div class="col-md-8 blog-main">
     <h3 class="pb-3 mb-4 font-italic border-bottom">From the Firehose</h3>
 	<p><%= link_to 'New Article', new_article_path, class: 'btn btn-primary'%></p>
-	<%= render @articles %>
+	<%= render 'article' %>
 	<%= render 'pagination'%>
 
 	</div>

@@ -4,7 +4,9 @@ class ArticlesController < ApplicationController
 
   
   def index
-    @articles = Article.all
+    current_page = (params[:page] || 1).to_i
+    #gem kaminari(PAGINACAO) permite visualizar 2 registros por pagina
+    @articles = Article.order(created_at: :desc).page(current_page).per(2)
   end
   def show
   end

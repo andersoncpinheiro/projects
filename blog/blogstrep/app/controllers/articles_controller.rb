@@ -4,14 +4,14 @@ class ArticlesController < ApplicationController
 
   
   def index
-    @highlights = Article.order(created_at: :desc).first(3)
+    @highlights = Article.desc_order.first(3)
     
     current_page = (params[:page] || 1).to_i
     highlight_ids = @highlights.pluck(:id).join(',')
     
     #gem kaminari(PAGINACAO) permite visualizar 2 registros por pagina
-    @articles = Article.order(created_at: :desc)
-    .where("id NOT IN(#{highlight_ids})")
+    @articles = Article.without_highlights(highlight_ids)
+    .desc_order
     .page(current_page).per(2)
   end
   def show

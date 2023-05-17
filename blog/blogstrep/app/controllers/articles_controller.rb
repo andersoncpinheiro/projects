@@ -12,7 +12,7 @@ class ArticlesController < ApplicationController
     #gem kaminari(PAGINACAO) permite visualizar 2 registros por pagina
     @articles = Article.without_highlights(highlight_ids)
     .desc_order
-    .page(current_page).per(2)
+    .page(current_page)
   end
   def show
   end

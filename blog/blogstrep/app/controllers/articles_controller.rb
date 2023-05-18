@@ -18,11 +18,11 @@ class ArticlesController < ApplicationController
   end
 
   def new
-    @article = Article.new
+    @article = current_user.articles.new
   end
   
   def create
-    @article = Article.new(article_params)
+    @article = current_user.articles.new(article_params)
       if @article.save
       redirect_to @article, notice: 'Article was succesfully created.'
     else
@@ -58,6 +58,6 @@ class ArticlesController < ApplicationController
     end
 
   def article_params
-    params.require(:article).permit(:title, :body, :category_id)
+    params.require(:article).permit(:title, :body, :category_id )
   end
 end

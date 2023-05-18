@@ -1,6 +1,9 @@
 <footer class="blog-footer">
-     <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+   <p>Developed by Anderson Pinheiro - Ruby On Rails</p>
      <p>
-       <a href="#">Back to top</a>
-     </p>
+        <%= link_to 'Back on Top', root_path(), id: 'back-to-top-link'%>   
+    </p>
+
+    <%= javascript_include_tag 'back_to_top' %>
 </footer>
+

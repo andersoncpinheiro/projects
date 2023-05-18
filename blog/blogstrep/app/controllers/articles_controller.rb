@@ -34,13 +34,11 @@ class ArticlesController < ApplicationController
   end
 
   def update
-
     if @article.update(article_params)
       redirect_to @article, notice: 'Article was succesfully updated.'
     else
       render :edit      
     end
-
   end
 
   def destroy

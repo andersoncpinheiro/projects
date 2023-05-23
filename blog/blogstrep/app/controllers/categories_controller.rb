@@ -3,21 +3,25 @@ class CategoriesController < ApplicationController
 
   # GET /categories or /categories.json
   def index
-    @categories = Category.sorted
+    @categories = policy_scope(Category.sorted)
   end
 
    # GET /categories/new
   def new
     @category = Category.new
+    authorize @category
+
   end
 
   # GET /categories/1/edit
   def edit
+    authorize @category
   end
 
   # POST /categories or /categories.json
   def create
     @category = Category.new(category_params)
+    authorize @category
 
     respond_to do |format|
       if @category.save
@@ -45,6 +49,8 @@ class CategoriesController < ApplicationController
 
   # DELETE /categories/1 or /categories/1.json
   def destroy
+    authorize @category
+
   if @category.destroy
 
     respond_to do |format|

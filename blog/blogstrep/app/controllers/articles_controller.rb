@@ -52,7 +52,11 @@ class ArticlesController < ApplicationController
   private
 
   def set_article
+<<<<<<< HEAD
     @article =Article.find(params[:id])
+=======
+    @article = Article.find(params[:id])
+>>>>>>> origin
     authorize @article
     end
 

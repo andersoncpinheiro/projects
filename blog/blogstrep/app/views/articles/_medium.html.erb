@@ -7,7 +7,10 @@
             </strong>
               <h3 class="mb-0"><%= article.title %></a>
               </h3>
-                <p class="mb-1 text-muted"><%= month_day_comma_year(article.created_at) %> by <%= article.user.email%> </p>
+                    
+              <div class='mb-1 text-muted'>
+              	<%= render 'article_detail', article: article%>            
+              </div>
 
               <p class="card-text mb-auto">
               <%= truncate(article.body, length: 100)%>

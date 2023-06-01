@@ -1,3 +1,3 @@
 # projects
-Projetos práticos de modejs, adicionado todos os módulos 
+Projetos práticos de nodejs, adicionado todos os módulos 
 Compativeis para execução correta do projeto.

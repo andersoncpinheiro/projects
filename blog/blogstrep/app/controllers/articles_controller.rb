@@ -7,22 +7,24 @@ class ArticlesController < ApplicationController
   
   def index
 
-    category = Category.find_by_name(params[:category]) if params[:category].present?
+    @categories = Category.sorted                
 
-    @highlights = Article.filter_by_category(category)
+    category = @categories.select { |c| c.name == params[:category]}[0] if params[:category].present?
+
+    @highlights = Article.includes(:category, :user)
+                         .filter_by_category(category)
                          .desc_order
                          .first(3)
-    
     highlight_ids = @highlights.pluck(:id).join(',')
 
     #gem kaminari(PAGINACAO) permite visualizar 2 registros por pagina
-    @articles = Article.without_highlights(highlight_ids)
+    @articles = Article.includes(:category, :user)
+                       .without_highlights(highlight_ids)
                        .filter_by_category(category)
                        .desc_order
                        .page(current_page)
 
 
-    @categories = Category.sorted                
 
   end
   def show

@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   root 'articles#index'
  
 #consegue através do resources realizar todas as rotas, post, get, update, delete
-  resources :articles
+  resources :articles do
+    resources :comments, only: %i[create]
+  end
+
   resources :categories, except: [:show]  
 end

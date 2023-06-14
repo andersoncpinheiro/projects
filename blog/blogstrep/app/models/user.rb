@@ -14,5 +14,15 @@ class User < ApplicationRecord
          :trackable,
          :validatable
 
+  validate :password_complexity
+
+         private
+
+         def password_complexity
+          return if password.nil?
+          
+          errors.add :password, :complexity unless CheckPasswordComplexityService.call(password)	
+          	
+        end
          
 end

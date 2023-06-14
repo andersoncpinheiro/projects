@@ -117,4 +117,19 @@ Rails.application.configure do
   # config.active_record.database_selector = { delay: 2.seconds }
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
+
+  # Email
+  config.action_mailer.default_url_options = { host: 'blogstrap.heroku.com' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: 'smtp.gmail.com',
+    domain: Rails.application.credentials.gmail[:domain],
+    port: 465,
+    user_name: Rails.application.credentials.gmail[:user_name],
+    password: Rails.application.credentials.gmail[:password],
+    authentication: 'login',
+    ssl: true,
+    tls: true,
+    enable_starttls_auto: true
+  }
 end

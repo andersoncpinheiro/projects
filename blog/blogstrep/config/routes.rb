@@ -5,7 +5,7 @@ Rails.application.routes.draw do
  
 #consegue através do resources realizar todas as rotas, post, get, update, delete
   resources :articles do
-    resources :comments, only: %i[create]
+    resources :comments, only: %i[create destroy]
   end
 
   resources :categories, except: [:show]  

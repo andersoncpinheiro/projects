@@ -17,5 +17,5 @@ Category.all.each do |category|
         )
     end
 end
-
+ 
 puts 'Terminou ...'

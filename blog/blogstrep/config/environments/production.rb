@@ -119,13 +119,13 @@ Rails.application.configure do
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
   # Email
-  config.action_mailer.default_url_options = { host: 'blogstrap.heroku.com' }
+  config.action_mailer.default_url_options = { host: 'blogstrap.fly.dev' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: 'smtp.gmail.com',
-    domain: Rails.application.credentials.gmail[:domain],
+    domain: gmail.com,
     port: 465,
-    user_name: Rails.application.credentials.gmail[:user_name],
+    user_name: Rails.application.credentials.gmail[:user_name].to_s,
     password: Rails.application.credentials.gmail[:password],
     authentication: 'login',
     ssl: true,

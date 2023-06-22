@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_06_07_162319) do
+ActiveRecord::Schema.define(version: 2023_06_20_172404) do
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
@@ -37,6 +37,15 @@ ActiveRecord::Schema.define(version: 2023_06_07_162319) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["article_id"], name: "index_comments_on_article_id"
     t.index ["user_id"], name: "index_comments_on_user_id"
+  end
+
+  create_table "latest_articles", force: :cascade do |t|
+    t.text "title"
+    t.text "content"
+    t.text "category"
+    t.text "createdBy"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "roles", force: :cascade do |t|

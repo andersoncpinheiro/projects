@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  &nbsp; 
+  &nbsp; 
+  &nbsp; 
+  <title>Dashboard</title>
+  <!-- Incluindo o Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Dashboard</h1>
+&nbsp; 
+&nbsp; 
+&nbsp; 
+
+   <!--  <h2>Quantidade Total de Artigos Cadastrados</h2>
+    <% @qtd_geral_articles.each do |article| %>
+    <div class="card">
+      <div class="card-body">
+        <p><%= article['qtd_geral_articles'] %></p>
+      </div>
+    </div>
+    <% end %>
+  </div>
+
+   <h2>Quantidade Total de Artigos FrontEnd</h2>
+    <% @qtd_cat_frontEnd.each do |article| %>
+    <div class="card">
+      <div class="card-body">
+        <p><%= article['qtd_cat_frontEnd'] %></p>
+      </div>
+    </div>
+    <% end %>
+  </div>
+-->
+
+  <h2>Quantidade Total de Artigos Cadastrados</h2>
+  <%= line_chart Article.group_by_day(:created_at).count, discrete: true, colors: ["#198754", "#222"], points: false, curve: true %>
+&nbsp; 
+    <h2>Artigos por categoria cadastrados</h2>
+
+<%= column_chart Category.group(:name ).count%>
+  <!-- Incluindo o jQuery e o Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -3,5 +3,4 @@ module ApplicationHelper
         render template, record if condition
     end
 
-
 end

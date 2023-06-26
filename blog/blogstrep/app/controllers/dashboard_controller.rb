@@ -1,8 +1,26 @@
 class DashboardController < ApplicationController
-  before_action :authenticate_user!
+ include Pundit
+    before_action :authenticate_user!
+    before_action :authorize_moderator
 
-  def index
-    @qtd_cat_frontEnd = ActiveRecord::Base.connection.execute("SELECT * FROM qtd_articles_categories_frontEnd").to_a
-    @qtd_geral_articles = ActiveRecord::Base.connection.execute("SELECT * FROM articles_general_qtd").to_a
+
+  def show
+    authorize :dashboard, :show?
   end
+
+  private 
+
+
+  def authorize_moderator
+      authorize :dashboard, :show?
+  end
+
+
+  def user_not_authorized
+     flash[:alert] = "You not authorized to access this page"
+     redirect_to(root_path)
+  end
+
+
+
 end

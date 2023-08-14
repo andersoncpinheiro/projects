@@ -11,32 +11,21 @@
   <!-- Incluindo o Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
-
 <body>
   <div class="container">
     <h1>Dashboard</h1>
 &nbsp; 
 &nbsp; 
 &nbsp; 
-
-    
-
-  <h2>Quantidade artigos cadastrados por data</h2>
-  <%= line_chart Article.group_by_day(:created_at).count, discrete: true, colors: ["#198754", "#222"], points: false, curve: true %>
+ <h2>Quantidade artigos cadastrados por data</h2>
+<%= line_chart @article_counts_by_day, discrete: true, colors: ["#198754", "#222"], points: false, curve: true %>
 &nbsp; 
 
-&nbsp; 
- <h2>Artigos cadastrados por categoria</h2>
-
-<% data = Article.joins(:category).group('categories.name').count %>
-<%= column_chart data.map { |category, count| [category, count] }, library: { title: 'Quantidade de Artigos por Categoria' },colors: ["#198754", "#222"],
- width: "800px", height: "250px", empty: "Sem dados de artigos cadastrados"%>
-
-
+&nbsp; <h2>Artigos cadastrados por categoria</h2>
+<%= column_chart @article_counts_with_empty_categories.map { |category, count| [category, count] }, library: { title: 'Quantidade de Artigos por Categoria' }, colors: ["#198754", "#222"], width: "800px", height: "250px", empty: "Sem dados de artigos cadastrados" %>
   <!-- Incluindo o jQuery e o Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
-
 </html>

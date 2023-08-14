@@ -1,5 +1,12 @@
 pt-BR:
-  hello: "Olá"
-  goodbye: "Tchau"
-  welcome: "Bem-vindo"
-  Categories: "Categorias"
+  links:
+    hello: "Olá"
+    goodbye: "Tchau"
+    welcome: "Bem-vindo"
+    Categories: "Categorias"
+    New Article: "Novo Artigo"
+    Back: "Voltar"
+    Edit: "Editar"
+    Destroy: "Excluir"
+  messages:
+    Please, login to create a comment: "Por favor, realize login para adicionar um comentário"

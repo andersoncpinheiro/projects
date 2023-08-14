@@ -22,7 +22,5 @@ class User < ApplicationRecord
           return if password.nil?
           
           errors.add :password, :complexity unless CheckPasswordComplexityService.call(password)	
-          	
-        end
-         
+        end      
 end

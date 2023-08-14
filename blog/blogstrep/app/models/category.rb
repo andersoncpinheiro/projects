@@ -6,5 +6,4 @@ class Category < ApplicationRecord
               uniqueness: {case_sensitive: false}
 
     scope :sorted, -> {order(:name)}
-
 end

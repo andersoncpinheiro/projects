@@ -13,7 +13,6 @@ class CategoryPolicy < ApplicationPolicy
       user&.admin? || user&.has_role?(:moderator)
     end
 
-
     def create?
       user.admin? || user.has_role?(:moderator)
     end
@@ -25,6 +24,4 @@ class CategoryPolicy < ApplicationPolicy
     def destroy?
       user.admin?
     end
-    
-
 end

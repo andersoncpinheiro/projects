@@ -3,7 +3,8 @@
         <%= f.input :title%>
         <%= f.input :body, input_html: {rows: 10} %>
         <%= f.association :category, collection: @categories, prompt: "Choose a category"%>
-</div>
+
+        <%= f.input :image, label: "Link da Imagem" %>
         
 
           <div class:"form-action">

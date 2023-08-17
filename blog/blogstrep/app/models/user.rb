@@ -15,8 +15,8 @@ class User < ApplicationRecord
          :validatable
 
   validate :password_complexity
-
-         private
+ 
+     private
 
          def password_complexity
           return if password.nil?

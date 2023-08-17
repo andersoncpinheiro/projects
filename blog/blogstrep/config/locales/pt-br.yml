@@ -8,5 +8,21 @@ pt-BR:
     Back: "Voltar"
     Edit: "Editar"
     Destroy: "Excluir"
+    Continue_reading: "Continue lendo..."
   messages:
     Please, login to create a comment: "Por favor, realize login para adicionar um comentário"
+    Are_you_sure: "Você tem certeza?"
+  activerecord:
+    attributes:
+      article:
+        title: "Título"
+        body: "Corpo"
+        category: "Categoria"
+    errors:
+      models:
+        article:
+          attributes:
+            title:
+              too_short: "deve ter pelo menos 10 caracteres"
+            body:
+              too_short: "deve ter pelo menos 10 caracteres"

@@ -2,7 +2,7 @@ class DashboardController < ApplicationController
  include Pundit
     before_action :authenticate_user!
     before_action :authorize_moderator
-
+    
     def index
       @article_counts_by_day = Article.group_by_day(:created_at).count
 
@@ -16,8 +16,6 @@ class DashboardController < ApplicationController
       end
       # DashboardController
      @article_counts_with_empty_categories = article_counts_with_empty_categories
-
-
     end
 
   def show

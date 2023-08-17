@@ -5,14 +5,14 @@
           	<%= render 'article_detail', article: article%>            
 
             <p> <%=truncate(article.body, length: 150 ) %></p>
-            <p><%=link_to 'Continue reading...', article, class: 'btn btn-link'%></p>
+            <p><%=link_to t('links.Continue_reading'), article, class: 'btn btn-link'%></p>
                         <p>Por <a href="#">Anderson Pinheiro</a></p>
 
- <%= link_to 'Edit', edit_article_path(article), 
+ <%= link_to t('links.Edit'), edit_article_path(article), 
  class:"btn btn-primary" if policy(article).edit?%>
- <%= link_to "Destroy", article_path(article), 
+ <%= link_to t('links.Destroy'), article_path(article), 
             method: :delete, 
-            data: { confirm: "Are you sure?" }, 
+            data: { confirm: t('messages.Are_you_sure') }, 
             class:"btn btn-danger" if policy(article).destroy?%>
            
   <%end%>

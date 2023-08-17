@@ -66,9 +66,7 @@ class ArticlesController < ApplicationController
 
     redirect_to root_path, notice: 'Article was succesfully detroyed'
   end
-
-  
-
+ 
   private
 
   def set_article
@@ -77,7 +75,7 @@ class ArticlesController < ApplicationController
     end
 
   def article_params
-    params.require(:article).permit(:title, :body, :category_id )
+    params.require(:article).permit(:title, :body, :image, :category_id )
   end
 
   def set_categories
